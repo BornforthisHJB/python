@@ -42,7 +42,7 @@
             style="width: 96px; padding: 0px"
             @click="saveFile"
           >
-            保存
+            下载
           </div>
         </div>
         <div class="header_right"></div>
@@ -211,7 +211,7 @@ export default {
       is_processing: false, //是否显示清除输出按钮
       is_grid: false, //网格线显示
       is_full_screen: false, //画布全屏
-      output: ["欢迎来到悦创小图灵的世界! Happy Coding :)\n"], //控制台输出
+      output: ["欢迎来到AI悦创·1v1,小图灵的世界! Happy Coding :)\n"], //控制台输出
       StopExecution: false, //终止运行标识
       canvansHeight: "0px",
       canvansWidth: "0px",
