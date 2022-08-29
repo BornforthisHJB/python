@@ -4,7 +4,7 @@
       <div class="flex-1-1-auto">
         <!-- <img src="../../static/logo.svg" alt="" /> -->
         <!-- 后期更换logo就把下面一行注释掉,上面一行src换成你的logo,并取消注释 -->
-        <div class="logo">流沙在线编程|社区</div>
+        <div class="logo">AI悦创·1v1</div>
         <!-- <a href="https://py.bornforthis.cn/#/"><div class="logo">AI悦创在线编程|社区</div></a> -->
       </div>
       <div class="flex-none">
@@ -24,17 +24,17 @@
       </div>
       <div class="header_py-btn">
         <a class="header_py-btn__hiNW1 logo" href="https://www.bornforthis.cn/"
-          >Python研习社</a
+        >博客</a
         >
         <div class="header_btn_">
-          <a class="release" href="https://www.aiycoj.cn/">
+          <a class="release" href="https://bornforthis.cn/onepython.html">
             <div
               class="button_header-button__xiNgO"
               style="width: 96px; padding: 0px"
             >
-              发布
-            </div></a
-          >
+              编程一对一
+            </div>
+          </a>
         </div>
         <div class="header_btn_">
           <div
@@ -137,7 +137,7 @@
         </div>
         <div class="btn_container">
           <div class="btn_canvas">
-            <img src="../../static/mesh.svg" @click="toggle_grid()" />
+            <img src="../../static/mesh.svg" @click="toggle_grid()"/>
           </div>
           <div class="btn_canvas">
             <img
@@ -167,6 +167,7 @@ import {
   code_size_options,
   console_size_options,
 } from "../assets/const.js";
+
 export default {
   mounted() {
     window.vm = this;
@@ -387,7 +388,7 @@ export default {
     saveFile() {
       var code = ace.edit("code").getValue();
       //定义文件内容，类型必须为Blob 否则createObjectURL会报错
-      let content = new Blob([code], { type: "text/plain" });
+      let content = new Blob([code], {type: "text/plain"});
       //生成url对象
       let urlObject = window.URL || window.webkitURL || window;
       let url = urlObject.createObjectURL(content);
@@ -408,7 +409,7 @@ export default {
 };
 </script>
 
-<style  scoped>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -555,6 +556,7 @@ export default {
   box-sizing: border-box;
   font-size: 14px;
 }
+
 .console_size {
   position: absolute;
   right: 6px;
@@ -613,11 +615,11 @@ export default {
   background-color: #ffffff;
   /*背景色*/
   background-image: linear-gradient(
-      90deg,
-      rgba(141, 141, 141, 0.15) 5%,
-      rgba(0, 0, 0, 0) 5%
-    ),
-    linear-gradient(0deg, rgba(141, 141, 141, 0.15) 5%, rgba(0, 0, 0, 0) 5%);
+    90deg,
+    rgba(141, 141, 141, 0.15) 5%,
+    rgba(0, 0, 0, 0) 5%
+  ),
+  linear-gradient(0deg, rgba(141, 141, 141, 0.15) 5%, rgba(0, 0, 0, 0) 5%);
   /*rgba(0, 0, 0, 0)，transparent全透明黑*/
   background-size: 20px 20px;
   /*调节格子宽 高*/
@@ -695,6 +697,7 @@ export default {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
+
 .input {
   color: white;
   background: transparent;
@@ -703,6 +706,7 @@ export default {
   display: inline;
   position: absolute;
 }
+
 input::placeholder {
   color: white;
 }
@@ -714,6 +718,7 @@ input::placeholder {
   color: inherit;
   text-decoration: none;
 }
+
 .code_size-code_example {
   display: flex;
   width: 200px;
@@ -722,9 +727,11 @@ input::placeholder {
   top: 0px;
   border: 16px;
 }
+
 .code_size-code_example div:first-child {
   flex: 1 1 55%;
 }
+
 .code_size-code_example div:last-child {
   flex: 1 1 45%;
 }
@@ -736,9 +743,11 @@ input::placeholder {
   background: #00000000;
   border: none;
 }
+
 .el-select-dropdown__list {
   text-align: center;
 }
+
 .el-input > input {
   text-align: center;
 }

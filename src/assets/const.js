@@ -1,4 +1,10 @@
 const code_example_options =[
+  {
+    name: "时间生成",
+    code: `import time  # 引入time模块
+print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))       # 打印按指定格式排版的时间
+`
+  },
   { name: "冰墩墩", code: `import turtle
 
 turtle.speed(1000)  # 速度
